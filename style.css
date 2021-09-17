@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body{
+    background-color: #FDD2BF;
+}
+.container{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+label{
+    display: block;
+    padding-bottom: 2rem;
+}
+input{
+    padding: .5rem;
+}
+#chk-button{
+    display: block;
+     min-width: 10%;
+     padding: .3rem;
+     margin-left: 45%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     background-color: #B61919;
+}
+#output{
+    color: #FF00E4;
+    font-size: large;
+}

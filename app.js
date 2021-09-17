@@ -9,11 +9,11 @@ function calculatingStock(initalprice,quantity,current){
     if(current < initalprice){
      var loss = (initalprice - current) * quantity;
      var lossPercentage = (loss/initalprice) * 100;
-     showoutPut(`😔 The loss is${loss} and the losspercentag is ${lossPercentage}%`)
+     showoutPut(`😔 The loss is ${loss} and the losspercentag is ${lossPercentage}%`)
     }else if(current > initalprice){
         var profit = (current - initalprice) * quantity;
         var profitPercentage = (profit/initalprice) * 100;
-        showoutPut(`😊 your profit is ${profit} and profitpercentage is${profitPercentage}`)
+        showoutPut(`😊 your profit is ${profit} and profitpercentage is ${profitPercentage}`)
     } else{
         showoutPut("No pain no gain,no gain no pain" )
     }         
