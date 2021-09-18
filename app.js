@@ -13,7 +13,7 @@ function calculatingStock(initalprice, quantity, current) {
     } else if (current > initalprice) {
         var profit = (current - initalprice) * quantity;
         var profitPercentage = (profit / initalprice) * 100;
-        showoutPut(`😊 your profit is ${profit} and profitpercentage is ${profitPercentage}`)
+        showoutPut(`😊 your profit is ${profit} and profitpercentage is ${profitPercentage}%`)
     } else {
         showoutPut("No pain no gain,no gain no pain")
     }
