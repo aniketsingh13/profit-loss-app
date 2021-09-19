@@ -30,8 +30,15 @@ function clickHandler() {
     var ip = Number(initialPrice.value);
     var qty = Number(quantity.value);
     var cps = Number(currentPrice.value);
+    if(ip=="" || qty=="" || cps==""){
+       showoutPut("please fill input in all the box")
+    }
+    else if(ip<0 || qty<0 || cps<0){
+        showoutPut("please enter valid input")
+    }
+    else{
     calculatingStock(ip, qty, cps);
-
+    }
 }
 
 
