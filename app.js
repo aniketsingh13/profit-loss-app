@@ -8,11 +8,11 @@ var outputD = document.querySelector("#output");
 function calculatingStock(initalprice, quantity, current) {
     if (current < initalprice) {
         var loss = (initalprice - current) * quantity;
-        var lossPercentage = (loss / initalprice) * 100;
+        var lossPercentage = Math.round(((initalprice-current) * 100) / initalprice);
         showoutPut(`😔 The loss is ${loss} and the losspercentag is ${lossPercentage}%`)
     } else if (current > initalprice) {
         var profit = (current - initalprice) * quantity;
-        var profitPercentage = (profit / initalprice) * 100;
+        var profitPercentage = Math.round(((current - initalprice) *100) / initalprice);
         showoutPut(`😊 your profit is ${profit} and profitpercentage is ${profitPercentage}%`)
     } else {
         showoutPut("No pain no gain,no gain no pain")
