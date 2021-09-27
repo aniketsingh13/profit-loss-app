@@ -32,3 +32,14 @@ input {
     color: #FF00E4;
     font-size: large;
 }
+.gt {
+   
+    font-size: 250%;
+}
+h2{
+    text-align: center;
+    margin-top: 1rem;
+}
+#connect{
+    text-align: center;
+}
